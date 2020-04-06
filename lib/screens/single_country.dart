@@ -66,9 +66,9 @@ class _SingleCountryState extends State<SingleCountry> {
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(
-          color: Colors.black87
+          color: Colors.white
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         title: Row(
           children: <Widget>[
             Container(
@@ -84,7 +84,7 @@ class _SingleCountryState extends State<SingleCountry> {
             Text(
                 '${widget.country.name}',
                 style: TextStyle(
-                color: Colors.black87
+                color: Colors.white
               ),
             ),
           ],
@@ -96,7 +96,7 @@ class _SingleCountryState extends State<SingleCountry> {
             child: ListView(
               children: <Widget>[
                 Card(
-                  color: Colors.white70,
+                  color: Colors.white,
                   elevation: 3,
                   margin: EdgeInsets.symmetric(vertical: 8, horizontal: 8),
                   child: Container(

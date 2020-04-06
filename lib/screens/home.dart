@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(
-          color: Colors.black87
+          color: Colors.white
         ),
         actions: <Widget>[
           IconButton(
@@ -91,13 +91,13 @@ class _HomeState extends State<Home> {
             },
           )
         ],
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Colors.black,
         elevation: 0,
         title: Center(
           child: Text(
-            'COVID-19 Cases',
+            'CORONA UPDATE',
             style: TextStyle(
-              color: Colors.black87
+              color: Colors.white
             ),
           ),
         ),
@@ -105,7 +105,7 @@ class _HomeState extends State<Home> {
       body: ModalProgressHUD(
         inAsyncCall: isEnable,
         child: RefreshIndicator(
-          color: Colors.lightBlue[800],
+          color: Colors.blue,
           onRefresh: ()async{
             await startNetworkTasks();
           },
@@ -113,15 +113,15 @@ class _HomeState extends State<Home> {
             children: <Widget>[
               ClipRRect(
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(15),
-                  bottomRight: Radius.circular(15),
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20),
                 ),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                    color: Colors.grey,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.grey,
+                        color: Colors.blue,
                         offset: Offset(0.0, 1.0), //(x,y)
                         blurRadius: 6.0,
                       ),
@@ -212,7 +212,7 @@ class _HomeState extends State<Home> {
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 16, horizontal: 16),
                 child: Text(
-                  'Stay Home, Stay Safe',
+                  'Stay Home Stay Safe',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -242,7 +242,7 @@ class _HomeState extends State<Home> {
                   Icons.label_important
               ),
               title: Text(
-                  'Symptoms of COVID-19'
+                  'Symptoms of Corona Virus'
               ),
               onTap: (){
                 Navigator.pop(context);
